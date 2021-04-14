@@ -9,9 +9,9 @@ def api_sales_info(applychannel):
 	s.mount('http://', HTTPAdapter(max_retries=3))
 	s.mount('https://', HTTPAdapter(max_retries=3))
 
-	url = 'http://xrc.yingzhongtong.com:8000/api/sales/info'
+	url = 'http://test.com:8000/api/sales/info'
 	body = {"applyChannel": applychannel}
-	headers = {"Host": "xrc.yingzhongtong.com", "Content-Type": "application/json"}
+	headers = {"Host": "test.com", "Content-Type": "application/json"}
 
 	try:
 		print(f"开始请求记录时间{time.strftime('%Y-%m-%d %H:%M:%S')}")
